@@ -1,0 +1,19 @@
+.page-contact-us{
+	header{
+		position:static;
+	}
+
+	.row.limit-width.row-parent{
+		margin:auto;
+	}
+
+	.heading-text,
+	.uncode_text_column{
+		text-align:center;
+	}
+
+	.uncode_text_column{
+		color:$black;
+		font-size:$fontsize-p-l;
+	}
+}

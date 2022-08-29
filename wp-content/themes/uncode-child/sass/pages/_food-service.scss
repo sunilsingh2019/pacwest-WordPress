@@ -1,0 +1,184 @@
+body.page-food-service{
+
+
+}
+
+.button-group.seafood{
+								
+	.button{
+		font-family: Authenia;
+	    font-size: $fontsize-title-l;
+	    font-weight:300;
+	    color:$brand-blue;
+	    width: 100%;
+		background-size: contain !important;  				
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+	}
+
+	.fish{
+		background:url('./images/fish-icon.png')
+	}
+
+	.specialty{
+		background:url('./images/specialty-icon.png')
+	}
+
+	.squid{
+		background:url('./images/squid-icon.png')
+	}
+
+	.scallop{
+		background:url('./images/scallop-icon.png')
+	}
+
+	.prawn{
+		background:url('./images/prawn-icon.png')
+	}
+}
+
+body.page-food-service-products{
+	header{
+		position:static;
+	}
+		
+	.products-block{
+		.left{
+			padding-left:20px;
+			
+			.body-l-bold{
+				color:$brand-blue;
+			}
+
+			.product-filter{
+				margin-top:20px;
+			}
+
+			.button-group{
+				margin-top:20px;
+
+				.row{
+					margin-bottom:15px;
+				}
+
+				.button{
+					
+				}
+
+				&.fish-type{
+					padding-left:0;
+
+					hr{
+						margin:3px 0;
+						color:$white-dark;
+					}
+
+					h4{
+						color:$black;
+					}
+
+					button{
+						background: $white;
+					}
+
+					li{
+						// border-bottom:1px solid $white-mid;
+						padding:3px 0;
+						margin-bottom:10px;
+					}
+				}
+				
+			}
+		}
+
+		.btn-center{
+			margin-top:30px;
+		}
+
+		.grid{
+			.element-item{
+				padding:0 10px 20px 10px;
+
+				.inner-wrapper{
+					height: 0;
+    				padding-bottom: 100%;
+    				background-size: cover;
+    				position: relative;
+    				display:block;
+
+    				&::before{
+						content: '';
+						display: none;
+						height: 100%;
+						position: absolute;
+						width: 100%;
+						background: linear-gradient(transparent 0%, #004578 100%) 0% 0% no-repeat;
+					}
+
+    				p{
+    					position: absolute;
+    					bottom:5%;
+    					left:50%;
+    					transform:translateX(-50%);
+    					color:$white;
+    					display: none;
+    					width:100%;
+    					text-align: center;
+    				}
+
+    				&:hover{
+    					&:before,
+    					p{
+    						display: block;
+    					}
+    				}
+				}
+			}
+		}
+	} 
+}
+
+body.page-at-home-products{
+	header{
+		position:static;
+	}
+
+	.products-block .element-item{
+		padding: 0 10px 20px 10px;
+
+		.inner-wrapper{
+			height: 0;
+		    padding-bottom: 100%;
+		    background-size: cover;
+		    position: relative;
+		    display: block;
+
+		    &::before{
+				content: '';
+				display: none;
+				height: 100%;
+				position: absolute;
+				width: 100%;
+				background: linear-gradient(transparent 0%, #004578 100%) 0% 0% no-repeat;
+			}
+
+			p{
+				position: absolute;
+				bottom:5%;
+				left:50%;
+				transform:translateX(-50%);
+				color:$white;
+				display: none;
+				width:100%;
+				text-align: center;
+			}
+
+			&:hover{
+				&:before,
+				p{
+					display: block;
+				}
+			}
+		}
+	}
+}

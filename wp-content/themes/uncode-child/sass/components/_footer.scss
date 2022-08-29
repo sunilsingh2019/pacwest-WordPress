@@ -1,0 +1,96 @@
+footer.footer{
+	background: $brand-blue;
+	padding:25px 40px 40px 40px;
+	color:$white;
+
+	table,tr,td{
+		border: none;
+	}
+
+	ul {
+		li{
+			padding:5px 0;
+			font-weight: 300;
+		}
+	}
+
+	.pages li a,
+	h3{
+		font-family: Avenir Bold;
+		font-size:$fontsize-title-s;
+		color:$white;
+	}
+
+	h3{
+		padding-top:10px;
+	}
+
+	
+	ul{
+		padding-left:0;
+
+		a{
+			color:$white;
+			font-size:$fontsize-p-l;
+		}
+	}
+
+	// & > .row > div{
+	// 	padding-top:30px;
+	// }
+
+	.left{
+		padding-top:10px;
+	}
+
+	.right{
+		padding-top:0;
+	}
+
+	.contact-info{
+		table{
+			margin-top:0;
+			margin-bottom:15px;
+
+			td{
+				white-space:nowrap;
+				padding-left:0;
+			}
+
+			tr:first-of-type{
+				td{
+					padding-top:5px;
+				}
+			}
+
+			tr td:last-of-type{
+				font-weight:300;
+			}			
+		}
+
+		& > a{
+			display: block;
+			text-decoration: underline;
+			font-size:$fontsize-p-l;
+			color:$white;
+		}
+	}
+	
+}
+
+@media (max-width:767px){
+	footer.footer{
+		.right{
+			padding-top:0;
+			padding-left:15px;
+
+			.pages{
+				padding-top:0;
+			}
+
+			.row > div{
+				padding-top:0px;
+			}
+		}
+	}
+}

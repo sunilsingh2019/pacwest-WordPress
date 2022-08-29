@@ -1,0 +1,115 @@
+.pos-absolute{
+	position: absolute;
+}
+
+header.header{	
+	background: linear-gradient(#fff 30%, transparent 100%) 0% 0% no-repeat;
+
+	.wrapper{
+		padding:20px 40px;
+	}
+	
+
+	.row{
+		align-items: center;
+
+		& > div{
+			padding-top:0;
+			padding-bottom:0;
+		}
+	}
+
+	.logo{
+		max-width:150px;
+	}
+
+	.top-menu{
+		ul{
+			display: flex;
+			
+			li{
+				margin-right:40px;
+			}
+
+			a{
+				color:$black;
+			}
+
+			// .ranges:hover{
+			// 	.hover-show{
+			// 		display: block;
+			// 	}
+			// }
+
+			.hover-show{
+				position: absolute;
+			}
+		}
+	}
+
+	.site-search{
+		input{
+			background:transparent;
+			border-bottom:1px solid $black;
+			padding:0;
+			width:200px;
+		}
+	}
+
+	.recipes-inspiration-hover-show{
+		padding:0;
+
+		& > .row{
+			padding:0;
+		}
+
+		.row > a{
+			display: block;
+			height:0;
+			padding-bottom:17%;
+			background-size:cover;
+			position:relative;
+			padding-left:0;
+			padding-right:0;
+
+			span{
+				font-family: Authenia;
+			    font-size: $fontsize-title-xl;
+			    font-weight:300;
+			    display: block;
+			    position: absolute;
+			    top:50%;
+			    left:50%;
+			    transform:translate(-50%, -50%);
+			}
+
+		}
+		.recipes{
+			background:url('images/pacwest-product.jpg');
+			span{
+				color:$white;
+			}
+		}
+
+		.trends{
+			background:url('images/pacwest-product.jpg');
+			span{
+				color:$brand-blue;
+			}
+		}
+
+		.gallery{
+			background:url('images/pacwest-product.jpg');
+			span{
+				color:$white;
+			}
+		}
+
+		.news{
+			background:url('images/pacwest-product.jpg');
+			span{
+				color:$white;
+			}
+		}
+	}
+}

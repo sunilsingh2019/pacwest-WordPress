@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/avenir/AvenirLTStd-Book.eot');
+    src: url('fonts/avenir/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir/AvenirLTStd-Book.woff2') format('woff2'),
+        url('fonts/avenir/AvenirLTStd-Book.woff') format('woff'),
+        url('fonts/avenir/AvenirLTStd-Book.ttf') format('truetype'),
+        url('fonts/avenir/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Bold';
+    src: url('fonts/avenir/AvenirLTStd-Black.eot');
+    src: url('fonts/avenir/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir/AvenirLTStd-Black.woff2') format('woff2'),
+        url('fonts/avenir/AvenirLTStd-Black.woff') format('woff'),
+        url('fonts/avenir/AvenirLTStd-Black.ttf') format('truetype'),
+        url('fonts/avenir/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Light';
+    src: url('fonts/avenir/AvenirLTStd-Roman.eot');
+    src: url('fonts/avenir/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('fonts/avenir/AvenirLTStd-Roman.woff') format('woff'),
+        url('fonts/avenir/AvenirLTStd-Roman.ttf') format('truetype'),
+        url('fonts/avenir/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Authenia';
+    src: url('fonts/authenia/Authenia-Regular.eot');
+    src: url('fonts/authenia/Authenia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/authenia/Authenia-Regular.woff2') format('woff2'),
+        url('fonts/authenia/Authenia-Regular.woff') format('woff'),
+        url('fonts/authenia/Authenia-Regular.ttf') format('truetype'),
+        url('fonts/authenia/Authenia-Regular.svg#Authenia-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Authenia Solid';
+    src: url('fonts/authenia/Authenia-Solid.eot');
+    src: url('fonts/authenia/Authenia-Solid.eot?#iefix') format('embedded-opentype'),
+        url('fonts/authenia/Authenia-Solid.woff2') format('woff2'),
+        url('fonts/authenia/Authenia-Solid.woff') format('woff'),
+        url('fonts/authenia/Authenia-Solid.ttf') format('truetype'),
+        url('fonts/authenia/Authenia-Solid.svg#Authenia-Solid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font Size Variables */
+$fontsize-title-xl:100px;
+$fontsize-title-l:40px;
+
+// $fontsize-title-m:42px;
+
+$fontsize-title-m:20px;
+
+$fontsize-title-s:18px;
+// $fontsize-title-xs:19px;
+
+$fontsize-title-xl-mobile:80px;
+$fontsize-title-l-mobile:30px;
+
+$fontsize-p-l:16px;
+$fontsize-p-m:14px;
+$fontsize-p-s:12px;
+
+// Line Height Variables
+$line-height-regular:1.5;
+$line-height-mid:1.5;
+$line-height-tight:1.2;
+
+body{
+    font-family:Avenir Light;
+}
+
+p{
+    font-size:$fontsize-p-l;
+}
+
+a.blue-link,
+button.blue-link{
+    color: $brand-blue;
+    text-decoration: underline;
+    font-size:$fontsize-p-l;
+    font-family: Avenir Bold;
+}
+
+.title{
+    font-family: Avenir;
+    font-size:$fontsize-title-l !important;
+}
+
+.title-m-bold{
+    font-family: Avenir Bold;
+    font-size:$fontsize-title-m !important;
+}
+
+.title-light{
+    font-family: Avenir Light;
+    font-size:$fontsize-title-l;
+}
+
+.title-s,
+.title-s *{
+    font-family: Avenir Light;
+    font-size:$fontsize-title-s;
+}
+
+.body-l{
+    font-family: Avenir Light;
+    font-size:$fontsize-p-l;
+}
+
+.body-l-bold{
+    font-family: Avenir Bold;
+    font-size:$fontsize-p-l !important;
+}
+
+.body-m{
+    font-family: Avenir Light;
+    font-size:$fontsize-p-m;
+}
+
+.body-s{
+    font-family: Avenir Light;
+    font-size:$fontsize-p-s;
+}
+.title-blue-authenia{
+    font-family: Authenia;
+    font-size: $fontsize-title-xl;
+    font-weight:300;
+    color:$brand-blue;
+}
+.title-white-authenia{
+    font-family: Authenia;
+    font-size: $fontsize-title-xl !important;
+    font-weight:300;
+    color:$white;
+}
+.title-black-avenir{
+    font-family: Avenir Light;
+    font-size: $fontsize-title-l;
+    font-weight: 300;
+    color:$black;
+}
+.title-blue-avenir{
+    font-family: Avenir Light;
+    font-size: $fontsize-title-l !important;
+    font-weight: 300;
+    color:$brand-blue;
+}
+.title-white-avenir{
+    font-family: Avenir Light;
+    font-size: $fontsize-title-l;
+    font-weight: 300;
+    color:$white;
+}
+h2 span,
+h1 span{
+    line-height: 0.9;
+}
+
+h1.title > span,
+h2.title > span{
+    display: block;
+    text-align: center;
+}

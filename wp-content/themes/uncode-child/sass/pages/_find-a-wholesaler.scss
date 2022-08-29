@@ -1,0 +1,140 @@
+body.page-find-a-wholesaler,
+body.page-find-a-store{
+	header{
+		position: static;
+	}
+
+	.row.limit-width.row-parent{
+		margin:auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	.wholesalers{
+		.wpb_column{
+			.uncode-single-media-wrapper{
+				height:0;
+				padding-bottom:80% !important;
+				position: relative;
+
+				img{
+					max-width:200px;					
+					width:auto;
+					height:auto;
+					margin:auto;
+					position: absolute;
+					top:50%;
+					left:50%;
+					transform:translate(-50%, -50%);
+				}
+			}
+			
+
+			.heading-text{
+				text-align: center;
+				// margin-top:30px;
+				margin-bottom:30px;
+
+				h3{
+					color:$brand-blue;
+					font-size:$fontsize-title-m;
+					font-family: Avenir Bold;
+				}
+			}
+
+			.uncode_text_column{
+				p{
+					text-align: center;
+					color:$black;
+				}
+			}
+
+			a{
+				color:$brand-blue;
+				font-size: $fontsize-p-l;
+				text-decoration: underline;
+			}
+
+			a.btn{
+				text-decoration: none;
+			}
+		}
+	}
+
+	.state-contact-info{
+		& > .row-parent{
+			border-top:1px solid $white-dark;
+			padding-top: 15px;
+		}
+
+		img{			
+		    width: 175px;
+			margin: auto;
+		}
+
+		.description{
+			margin-top:30px;
+			margin-bottom:30px;			
+		}
+
+		.uncode_text_column{
+			p{
+				color:$black;
+				font-size:$fontsize-p-l;
+				text-align: center;
+			}
+
+			.body-l-bold{
+				color:$brand-blue;
+				margin-bottom: 0;
+			}
+
+			a{
+				color: $brand-blue;
+			    text-decoration: underline;
+			    font-size:$fontsize-p-l;
+			    font-family: Avenir Light;
+			}
+		}
+	}
+}
+
+@media (max-width:959px){
+	body.page-find-a-wholesaler,
+	body.page-find-a-store{
+		.wholesalers{
+			.wpb_column{
+				.uncode-single-media-wrapper{					
+					padding-bottom:20% !important;									
+				}
+			}
+		}
+	}
+
+	body.page-find-a-store{
+		.wholesalers{
+			.btn-container{
+				text-align: center;
+			}
+		}
+
+		.state-contact-info{
+			margin-top:30px;
+		}
+	}
+}
+
+@media (max-width:550px){
+	body.page-find-a-wholesaler,
+	body.page-find-a-store{
+		.wholesalers{
+			.wpb_column{
+				.uncode-single-media-wrapper{					
+					padding-bottom:32% !important;									
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<svg id="Map_Point" data-name="Map Point" xmlns="http://www.w3.org/2000/svg" width="30.7" height="40.915" viewBox="0 0 30.7 40.915">
+  <path id="Path_362" data-name="Path 362" d="M15.35,0A15.35,15.35,0,0,1,30.7,15.35c0,8.478-15.35,25.565-15.35,25.565S0,23.828,0,15.35A15.35,15.35,0,0,1,15.35,0Z" fill="#004677"/>
+  <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(5.777 5.235)" fill="none" stroke="#fff" stroke-width="1">
+    <circle cx="10" cy="10" r="10" stroke="none"/>
+    <circle cx="10" cy="10" r="9.5" fill="none"/>
+  </g>
+  <text id="Icon" transform="translate(15.777 17.235)" fill="#fff" font-size="6" font-family="Avenir-Light, Avenir" font-weight="300"><tspan x="-5.673" y="0">Icon</tspan></text>
+</svg>

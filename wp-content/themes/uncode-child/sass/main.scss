@@ -1,0 +1,94 @@
+/*
+* Author: Redpin Design
+* Version: 1.0.0
+*/
+
+@import 'bootstrap-5.0.2-dist/css/bootstrap.min.css';
+
+/*
+* Import Variables 
+*/
+@import 'base/_variables';
+
+
+/*
+* Import Typography
+*/
+@import 'base/_typography';
+
+/*
+* Import Base
+*/
+@import 'base/_base';
+
+/*
+* Import Buttons
+*/
+@import 'components/_buttons';
+
+/*
+* Import Blocks
+*/
+@import 'components/_blocks';
+
+/*
+* Import Header
+*/
+@import 'components/_header';
+
+/*
+* Import Footer
+*/
+@import 'components/_footer';
+
+/*
+* Import Homepage
+*/
+@import 'pages/_homepage';
+
+/*
+* Import Food service Page
+*/
+@import 'pages/_food-service';
+
+/*
+* Import Single product Page
+*/
+@import 'pages/_single-product';
+
+/*
+* Import Gallery Page
+*/
+@import 'pages/_gallery';
+
+/*
+* Import About Us Page
+*/
+@import 'pages/_about-us';
+
+/*
+* Import Contact Us Page
+*/
+@import 'pages/_contact-us';
+
+/*
+* Import Blog Page
+*/
+@import 'pages/_blog';
+
+/*
+* Import Blog Page
+*/
+@import 'pages/_single-recipe';
+
+/*
+* Import Find a wholesaler Page & Find a Store page
+*/
+@import 'pages/_find-a-wholesaler';
+
+/*
+* Import Search Page
+*/
+@import 'pages/_search';
+
+

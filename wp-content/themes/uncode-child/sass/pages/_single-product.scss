@@ -1,0 +1,280 @@
+
+.top-banner.single-post{
+	.wrapper{
+		max-height:600px;
+		overflow: hidden;
+	}
+	
+	.img-wrapper{
+		height:0;
+		padding-bottom:40%;
+		overflow:hidden;
+
+		img{
+			// height:653px;
+			width:100%;
+			max-width: none;
+			
+		}
+
+	}
+}
+
+
+
+body.single-product{
+	
+	.at-home{
+		.top-banner{
+			position: relative;
+
+			.package{
+				position: absolute;
+    			bottom: -20%;
+
+    			img{
+					max-width:600px;
+				}
+			}
+		}
+	}	
+
+	h1.title{
+		margin-top:20px;
+		margin-bottom:50px;
+		// background-image:url('./images/product-fish-icon.png');
+		background-size:contain;
+		background-repeat: no-repeat;
+    	background-position: center;
+
+		span{
+			display: block;
+			line-height: 1;
+		}
+
+		.title1{
+			text-transform:uppercase;
+		}
+	}
+
+	.content{
+		max-width:600px;
+		margin:auto;
+		font-family: Avenir Light;
+		color:$black-dark;
+
+		.features{
+			margin-top:40px;
+		}
+
+		p{
+			font-family: Avenir Light;
+			font-size: $fontsize-p-l;			
+		}
+
+		strong{
+			padding-top:20px;
+			font-family: Avenir Bold;
+			font-size: $fontsize-title-m;
+			display: inline-block;
+		}    
+
+		ul{
+			list-style: disc;
+		}
+
+		a.button{
+			display: inline-block;
+    		margin-top: 30px;
+		}
+	}
+
+	.specs-title-wrapper{
+		display: flex;
+    	align-items: center;
+
+    	.specs-title{
+    		margin-left:15px;
+
+    		a{
+    			color:$brand-blue;
+    			text-decoration: underline;
+    		}
+    	}
+	}
+
+	table.variations{
+		margin:auto;		
+		font-size: $fontsize-p-m;
+		border:none;
+
+		th{
+			font-family: Avenir Bold;
+			border-color:#E8E8E8;
+			color:$black-dark;
+		}
+
+		td{
+			font-family: Avenir Light;
+			border-color:#E8E8E8;
+			color:$mid-grey;
+		}
+	}
+
+	.purchase-wrapper{
+		text-align: center;
+		max-width: 800px;
+		margin:auto;
+		padding-top:50px;
+
+		h2{
+			color:$brand-blue;
+		}
+
+		p{
+			margin-top:10px;
+			margin-bottom:50px;
+		}
+	}
+
+	.view-wholesalers{
+		margin-top:50px;
+	}
+
+	.single-product-slider{
+
+		.slick-next{
+			right:0;
+			z-index: 9;
+		}
+
+		.slick-prev{
+			left:0;
+			z-index: 9;
+		}
+		
+		.item{
+			position: relative;
+
+			.img-wrapper{
+				height:0;
+				padding-bottom:100%;
+				overflow: hidden;
+
+				img{
+					width:100%;
+				}
+			}
+
+			.name{
+				position: absolute;
+				bottom:20px;
+				color:$white;
+				display: none;
+				width:100%;
+				text-align: center;
+			}
+
+			&:before{
+				position: absolute;
+				content:"";
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				background:linear-gradient(transparent 70%, #004578 100%);
+				display: none;
+			}
+
+			&:hover{
+				&:before{
+					display: block;
+				}
+				.name{
+					display: block;
+				}
+			}
+		}		
+	}
+
+	
+}
+
+@media (max-width:1500px){
+	
+	body.single-product{
+		.top-banner.single-post{			
+			.package{
+				bottom:-20%;
+
+				img{
+					max-width:50%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:1250px){	
+	body.single-product{
+		.top-banner.single-post{			
+			.package{				
+
+				img{
+					max-width:40%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:1050px){	
+	body.single-product{
+		.top-banner.single-post{			
+			.package{				
+
+				img{
+					max-width:30%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:600px){
+	.top-banner.single-post{
+		.wrapper{
+			max-height:none;
+		}
+		
+		.img-wrapper{
+			height:600px;
+			padding-bottom:0%;	
+			// max-height:600px;	
+
+			img{
+				width:auto;
+				position: relative;
+				left:50%;
+				top:50%;
+				transform:translate(-50%, -50%);
+			}	
+		}		
+	}
+
+	body.single-product{
+		
+		.at-home{
+			.top-banner{				
+				.package{					
+	    			bottom: -10%;
+
+	    			img{
+						max-width:65%;
+					}
+				}
+			}
+		}
+	}
+}
+

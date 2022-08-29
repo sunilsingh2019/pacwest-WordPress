@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Authenia-Solid';
+    src: url('fonts/authenia/Authenia-Solid.eot');
+    src: url('fonts/authenia/Authenia-Solid.eot?#iefix') format('embedded-opentype'),
+        url('fonts/authenia/Authenia-Solid.woff2') format('woff2'),
+        url('fonts/authenia/Authenia-Solid.woff') format('woff'),
+        url('fonts/authenia/Authenia-Solid.svg#Authenia-Solid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

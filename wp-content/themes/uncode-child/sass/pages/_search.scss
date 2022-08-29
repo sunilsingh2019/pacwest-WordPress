@@ -1,0 +1,52 @@
+body.search{
+	header{
+		position: static;
+	}
+
+	#content-inner{
+		padding:0 50px;
+
+        .results-count{
+            margin-top:80px;
+            text-align: center;
+            color:$brand-blue;
+        }
+
+		.results{
+			display: flex;
+    		flex-wrap: wrap;
+            justify-content:center;
+
+    		.wrapper{
+    			// width:25%;
+    			width:283px;
+    			// max-width:400px;
+    			// min-width:283px;
+    			padding: 10px;
+
+    			img{
+    				width:100%;
+    			}
+
+    			h2{
+    				font-size:$fontsize-title-m;
+    				color:$brand-blue;
+    				font-family:Avenir;
+    				margin-top:20px;
+    			}
+
+                .desc{
+                    max-height:300px;
+                    display: -webkit-box;    
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+    		}
+		}
+
+        .no-results{
+            text-align:center;
+        }
+	}
+}

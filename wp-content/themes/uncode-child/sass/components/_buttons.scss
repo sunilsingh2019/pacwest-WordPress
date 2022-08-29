@@ -1,0 +1,88 @@
+.style-light .btn-default:not(.btn-hover-nobg):not(.icon-animated):not(.btn-flat).btn-blue-white:hover{
+	background:$brand-blue !important;
+	background-color:$brand-blue !important;
+	border-color:$brand-blue !important;
+	color:$white !important;
+}
+
+.btn-center{
+	text-align: center;
+}
+// blue text with white background color
+.style-light .btn-container .btn-blue-white,
+.btn-blue-white{
+	font-size:$fontsize-p-l !important;
+	color:$brand-blue !important;
+	padding:10px 35px !important;
+	border:1px solid $brand-blue !important;
+	background:transparent !important;
+	border-radius:10px 0px !important;
+
+	&:hover{
+		background:$brand-blue !important;
+		background-color:$brand-blue !important;
+		border-color:$brand-blue !important;
+		color:$white !important;
+	}
+}
+
+// black text with white background color
+.style-light .btn-container .btn-black-white,
+.btn-black-white{
+	font-size:$fontsize-p-l !important;
+	color:$black-dark !important;
+	padding:10px 35px !important;
+	border:1px solid $black-dark !important;
+	background:$white !important;
+	border-radius:10px 0px !important;
+
+	&:hover{
+		background:$black-dark !important;
+		color:$white !important;
+	}
+}
+
+// white text with blue background color
+.style-light .btn-container .btn-white-blue,
+.btn-white-blue{
+	font-size:$fontsize-p-l !important;
+	color:$white !important;
+	padding:10px 35px !important;
+	border:1px solid $brand-blue !important;
+	background:$brand-blue !important;
+	border-radius:10px 0px !important;
+
+	&:hover{
+		background:$white !important;
+		color:$brand-blue !important;
+	}
+}
+
+
+
+.style-light .btn-container .btn-white-transparent,
+.btn-white-transparent{
+	font-size:$fontsize-p-l !important;
+	color:$white !important;
+	padding:10px 35px !important;
+	border:1px solid $white !important;
+	background:transparent !important;
+	border-radius:10px 0px !important;
+
+	&:hover{
+		background:$brand-blue !important;
+		color:$white !important;
+		border:1px solid $brand-blue !important;
+	}
+}
+
+a.button{
+	display: inline-block;
+	height:auto !important;
+}
+
+a.button.center{
+	position:relative;
+	left:50%;
+	transform:translateX(-50%);
+}

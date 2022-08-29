@@ -1,0 +1,1020 @@
+.top-banner-overlay{
+	position: relative;
+	&::before{
+	  background: linear-gradient(180deg, transparent 50%, #F8F8F8 100%) 0% 0% no-repeat;
+	  content: '';
+	  display: block;
+	  height: 100%;
+	  position: absolute;
+	  width: 100%;
+	  z-index: 9
+	}
+}
+
+.banner-gradient{
+	position: relative;
+	&::before{
+	  background: linear-gradient(90deg, transparent 70%, #004578 100%) 0% 0% no-repeat;
+	  content: '';
+	  display: block;
+	  height: 100%;
+	  position: absolute;
+	  width: 100%;
+	  z-index: 9;
+	  opacity:0.9;
+	}
+}
+
+h1.title{
+	margin-top:20px;
+}
+
+// ----------------------- top banner ------------------------------------
+.top-banner{
+	img{
+		width:100%;
+	}
+
+	.top-banner{
+		.mobile{
+			display: none;
+		}
+	}
+
+	.content-right{
+		position: absolute;
+	    right: 5%;
+	    z-index: 9;
+	    top:50%;
+	    transform:translateY(-50%);
+	    display: flex;
+    	flex-direction: column;
+    	justify-content:center;
+    	align-items: center;
+
+    	img{
+    		width: 50%;
+    	}
+
+    	h1{
+    		margin-top:15px;
+    	}
+
+    	span{
+    		line-height: 1.2;
+    	}
+
+    	.button{
+    		text-align: center;
+    		width:250px;
+    		border-color: #fff !important;
+    		margin-top: 50px;
+    	}
+	}
+}
+
+@media (max-width:1000px){
+	.top-banner{
+		.content-right{
+			img{
+				display: none;
+			}
+
+			a.button{
+				margin-top:15px;
+			}
+		}
+	}
+}
+
+@media (max-width:600px){	
+	.top-banner{
+		&:before{
+			background: linear-gradient(#fff 7%, #004578 15%, transparent 70%) 0% 0% no-repeat;
+		}
+
+		.mobile{
+			display: block;
+		}
+
+		.desktop{
+			display: none;
+		}
+
+		.content-right{
+			display: none;
+		}
+
+		.content-mobile{
+			position: absolute;
+			left:50%;
+		    z-index: 9;
+		    top: 130px;
+		    transform:translateX(-50%);
+		    text-align:center;
+		    width:80%;
+
+		    h1{
+		    	margin-bottom:0;
+		    	line-height: 1;
+		    }
+
+		    a.button{
+		    	display: inline-block;
+		    	margin-top:30px;
+		    }
+	
+		}
+	}
+
+}
+
+
+
+// ----------------------- two column text image ------------------------------------
+.two-column-text-image{
+	position: relative;
+
+	div.wpb_column.align_left.column_parent:first-of-type > .uncol{
+		padding:80px 10px 0 30px;
+	}
+	
+	h2{
+		p{
+			line-height: 1;
+			margin-top:0;
+		}
+	}
+	.uncode_text_column p{
+		max-width:600px;
+		color:$black;
+		font-size:$fontsize-p-l;
+		line-height: 2;
+	}
+
+	.btn-container{
+		margin-bottom:15px;
+	}
+}
+
+.two-column-text-image.without-image{
+
+}
+
+body.home .two-column-text-image{
+	div.wpb_column.align_left.column_parent:first-of-type > .uncol{
+		padding-top:20px;
+	}
+}
+
+@media (max-width:1400px){
+	.two-column-text-image.without-image{		
+
+		.uncode_text_column p{
+			max-width:500px;	
+		}
+	}
+}
+
+@media (max-width:1200px){
+	.two-column-text-image.without-image{		
+
+		.uncode_text_column p{
+			max-width:350px;	
+		}
+	}
+}
+
+@media (max-width:959px){
+	.two-column-text-image{
+		.mobile-hide{
+			display: none;
+		}
+
+		h2 .title-black-avenir{
+			width:220px;
+			display: block;
+			line-height: $line-height-tight;
+		}
+	}
+}
+
+@media (max-width:767px){
+	body.home .two-column-text-image{		
+
+		div.wpb_column.align_left.column_parent:first-of-type > .uncol{
+			padding-top:0px;
+		}
+	}
+	
+	.two-column-text-image.without-image{		
+
+		.uncode_text_column p{
+			max-width:600px;	
+		}
+	}
+}
+
+// ----------------------- brand selector ------------------------------------
+
+@keyframes bgfadein {
+	0% {
+		background: white;
+	}
+
+	50% {
+		background: linear-gradient(180deg,transparent 0%, #004578 100%) 0% 0% no-repeat;
+	}
+
+	75% {
+		background: linear-gradient(180deg,transparent 25%, #004578 100%) 0% 0% no-repeat;
+	}
+
+	100% {
+		background: linear-gradient(180deg,transparent 50%, #004578 100%) 0% 0% no-repeat;
+	}
+}
+
+// @keyframes slideleft {
+// 	0% {
+// 		transform: scaleY(0);
+// 	}
+
+// 	100% {
+// 		transform: scaleY(100%);
+// 	}
+// }
+
+.brand-selector{
+
+	.container{
+		padding:0;
+
+		.row{
+			margin:0;
+		}
+
+		& > .row > a{
+			display: block;
+		}
+
+		.logo{
+			position: absolute;
+			top:10%;
+			left:50%;
+			transform:translateX(-50%);
+		}
+		
+	}
+
+	.hover-part{
+		// display: none;
+		opacity:0;
+		position: absolute;
+	    z-index: 10;
+	    right: 0;
+	    padding-left:0;
+	    padding-right:0;
+	    z-index:0;
+
+	    .range{
+	    	padding-bottom:50%;
+	    	position: relative;
+	    	// background-image:url('images/pacwest-banner-dark.jpg');
+			background-size:cover;	
+			background-position: center;
+
+			&::before{
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				width: 100%;
+				background: linear-gradient(180deg,transparent 50%, #004578 100%) 0% 0% no-repeat;
+			}
+
+			p{
+				color:$white;
+			}
+
+			.inner-content{
+				bottom:20px;
+				width:100%;
+				padding:0 20px;
+				display: flex;
+				justify-content:space-between;
+			}
+			
+	    }
+
+	    .product-slider{
+	    	button{
+	    		z-index: 2;
+	    	}
+	    	.slick-next{
+	    		right:15px;
+	    	}
+
+	    	.slick-prev{
+	    		left:15px;
+	    	}
+
+	    	.item{
+	    		position: relative;
+
+	    		.img-wrapper{
+					height:0;
+					padding-bottom:100%;
+					overflow: hidden;
+
+					img{
+						width:100%;
+					}
+				}
+
+	    		.name{		    		
+		    		position: absolute;
+					bottom:20px;
+					color:$white;
+					display: none;
+					width:100%;
+					text-align: center;
+		    	}
+
+		    	&:before{
+					position: absolute;
+					content:"";
+					top:0;
+					left:0;
+					right:0;
+					bottom:0;
+					background:linear-gradient(transparent 80%, #004578 100%);
+					display: none;
+				}
+
+				&:hover{
+					&:before{
+						display: block;
+					}
+					.name{
+						display: block;
+					}
+				}
+	    	}
+
+	    	
+	    }
+	}
+
+	.food-service,
+	.at-home{
+		display: flex;
+		justify-content:center;
+		text-align:center;
+		z-index:10;
+
+		p{
+			color:$white;
+			width:80%;
+			margin:auto;
+			text-align:center;
+			line-height: 1.5;
+		}
+	}
+
+	.full-container > .row > div,
+	.full-container > .row > a{
+		height:0;
+		padding-bottom:50%;
+		// padding-left:0;
+	}
+
+	.inner-content{
+		position: absolute;
+		bottom:40px;
+		width:100%;
+	}
+ 
+
+	.food-service,
+	.at-home,
+	.other{
+		background-size:cover;
+		position: relative;
+
+		&::before{
+		  background: linear-gradient(180deg, transparent 50%, #004578 100%) 0% 0% no-repeat;
+		  content: '';
+		  display: block;
+		  height: 100%;
+		  position: absolute;
+		  width: 100%;
+		  left:0;
+		}
+
+		&:hover:before{
+			animation: bgfadein 3s linear;
+		}
+		
+	}
+
+	.food-service{
+		// background-image:url('images/pacwest-brand.jpg');
+	}
+
+	.at-home{
+		&::before{
+			animation: bgfadein 3s linear;
+		}
+	}
+
+	// .food-service-hover:before{
+	// 	content: '';
+	// 	  display: block;
+	// 	  height: 100%;
+	// 	  position: absolute;
+	// 	  width: 100%;
+	// 	  left:0;
+	// 	animation: bgfadein 3s linear;
+	// }
+
+	// .food-service-hover{
+	// 	animation: slideleft 3s linear;
+	// }
+
+	.food-service:hover{
+
+	}
+
+	.other{
+		padding-left:0;
+		text-align:center;
+		// background-image:url('images/other-brands-background.jpg');
+
+		&::before{
+		  background: linear-gradient(180deg, #004578 0%, transparent 50%, ) 0% 0% no-repeat;
+		}
+
+		.inner-content-other{
+			position: relative;
+			z-index:2;
+
+			img{
+				display: block;
+				margin:auto;
+			}
+
+			.street{
+				width:40%;
+				margin-top:50px;
+			}
+
+		}
+
+		h3{
+			margin-top:100px;
+			margin-bottom:50px;			
+		} 
+
+		.wws{
+			position: absolute;
+			bottom:0;
+			width:100%;
+			left:0;
+		}
+		
+	}
+}
+
+@media only screen and (max-width:1300px){
+
+	.brand-selector{
+
+		.container{
+
+			h3{
+				line-height: 1;
+				font-size:$fontsize-title-xl-mobile !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:1160px){ 
+	.brand-selector .other h3 {
+	    margin-top: 60px;
+	    margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width:1005px) and (min-width:768px){ 
+	.brand-selector .other {
+		h3 {
+			margin-top: 40px;
+		    margin-bottom: 20px;
+		}
+
+		.ocean-chef{
+			width:70%;
+		}
+
+		.inner-content-other .street{
+			margin-top:0;
+		}
+	}
+}
+
+@media only screen and (max-width:767px){ 
+	.brand-selector .full-container > .row > div, .brand-selector .full-container > .row > a{
+		padding-bottom:150%;
+	}
+	.brand-selector{
+
+		.container{
+
+			.logo{
+				width:40%;
+			}
+		}
+	}
+}
+
+@media (max-width:1400px){
+	body.page-our-ranges{
+		.brand-selector .food-service img.logo{
+			display: none;
+		}
+	}
+}
+
+@keyframes updown {
+  0% {
+        transform: scaleY(1);;
+      
+  }
+
+  50% {
+        transform: scaleY(0);;
+      
+  }
+    
+    
+  100% {
+        transform: scaleY(1);;
+  }
+}
+
+// ----------------------- waterfall layout ------------------------------------
+// some of the waterfall styling is in _gallery.scss
+.waterfall-title{
+	text-align: center;
+	margin-top:100px;
+
+	span{
+		display: block;
+
+		&:last-of-type{
+			margin-top:-10px;
+		}
+	}
+}
+
+.waterfall{	
+	text-align: center;
+	padding-left:15px;
+	padding-right:15px;
+	// margin-bottom:50px;
+	
+    .waterfall-content{
+    	display: flex;
+	    flex-wrap: wrap;
+	    position: relative;
+	    justify-content:center;
+
+	    & > div{
+			padding:10px 10px;
+		}
+    }
+
+	
+
+	.col-container{
+		display: flex;
+    	flex-direction: column;
+	}
+
+	// .xl-size{
+	// 	flex: 0 0 auto;
+ //    	width: 16.66666667%;
+	// }
+
+	// .lg-size{
+	// 	flex: 0 0 auto;
+	//     width: 20%;
+	// }
+
+	// .md-size{
+	// 	flex: 0 0 auto;
+ //    	width: 25%;
+	// }
+
+	.item{
+		margin-bottom:20px;
+
+		// &::before{
+		// 	content: '';
+		// 	display: block;
+		// 	height: 100%;
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	background: linear-gradient(180deg,transparent 50%, #004578 100%) 0% 0% no-repeat;
+		// }
+	}	
+
+	
+	.item{
+		background-size:cover;		
+		color:$white;
+		// height:100%;
+
+		// &:hover{
+		// 	.post_info{				
+		// 		opacity:1;
+		// 		transition:1s;
+		// 		display: block;
+		// 	}
+		// }
+
+		.general_info{
+			width:100%;
+			position:absolute;
+			top:0;
+			display: flex;
+			justify-content:space-between;
+			text-transform:uppercase;
+
+			.post_type{
+				background:$brand-blue;
+				padding:6px 27px;				
+			}
+
+			.category{
+				padding:6px;
+				text-shadow: 2px 2px 5px #000000;
+			}
+		}
+
+		.wrapper{
+			position: absolute;
+			bottom:5px;
+			width:100%;
+
+			h3{
+				padding:0px 5px;
+				text-align: center;
+				margin-bottom:20px;
+			}
+		}
+
+		.post_info{
+			font-size:$fontsize-p-s;
+			display: none;
+			opacity:0;
+			padding:0 15px;
+			margin-bottom:15px;
+			text-align:left;
+		}		
+	}
+
+	.loading{
+		background-image:url('images/Tag-For-Loading-Bar-Gif-Transparent-Loading-Gif-.gif');
+		width:100px;
+		height:100px;
+		background-size:cover;
+		margin:100px 0;
+	}
+
+	a.button{
+		display: inline-block;
+		margin-top:30px;
+	}
+}
+
+// ----------------------- globe map ------------------------------------
+
+.globe-map{
+	position: relative;
+
+	h2{
+		position: absolute;
+		top:0;
+		left:50%;
+		transform:translateX(-50%);
+		z-index: 9;
+
+		span{
+			display: block;
+			text-align: center;
+		}
+	}
+	.show{
+		display: block;
+	}
+
+	.rs-layer[data-type="text"]{
+		background:$white !important;
+		padding:23px 20px;
+		display:none;	
+	}
+
+	p{
+		margin:0 !important;
+		text-align:center !important;		
+
+		& + br{
+			height:15px;
+		}
+	}
+
+	.bottom-text{
+		position:absolute;
+		bottom:0;
+		z-index:9;
+		width:100%;
+		margin-bottom:50px;
+		color:$black;
+		padding: 0 15px;
+
+		p{
+			margin:auto !important;
+			line-height: 1.75 !important;
+		}
+	}
+}
+
+@media  (max-width:820px){
+	.globe-map{	
+		h2{
+			position: static;
+			transform:translate(0,0);
+		}
+
+		p{
+
+			line-height: 1 !important;
+		}
+
+		.bottom-text{
+			position:static;	
+			line-height: 1.75 !important;		
+		}
+	}
+}
+
+// ----------------------- view wholesaler block ------------------------------------
+.view-wholesalers{
+	// background:url('images/pacwest-find-a-retailer-wholesaler.jpg');
+	background-size:cover;
+	text-align: center;
+	padding:50px 10px;
+	// margin-top:50px;
+
+	h2{
+		text-align:center;
+		margin-bottom:20px;
+
+		span.title{
+			display: block;
+			color:$white;
+		}
+	}
+}
+
+body.page-our-ranges{
+	.view-wholesalers{
+		margin-top:0px;
+	}
+}
+
+@media (max-width:702px){
+	.view-wholesalers{
+		h2{
+			span.line-three{
+				display:block;
+			}
+			span.title{
+				margin-bottom:15px;
+			}
+		}
+	}
+}
+
+@media (max-width:500px){
+	.view-wholesalers{
+		h2{
+			span{
+				display: block;
+			}			
+		}
+	}
+}
+
+// ----------------------- popular product block ------------------------------------
+.popular{
+	margin-top:100px;
+	margin-bottom:50px;
+}
+
+.popular-products{
+	padding: 0;
+	text-align: center;
+
+	& > .row{
+		margin:0;
+
+		.product{
+			padding:0;
+		}
+	}
+
+	a.button{
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+	.item{
+		position: relative;
+		padding:0;
+
+		.img-wrapper{
+			position: relative;
+			height:0;
+			padding-bottom:100%;
+			overflow: hidden;
+			display: block;
+
+			img{
+				width:100%;
+			}
+
+			&:before{
+				position: absolute;
+				content:"";
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				background:linear-gradient(transparent 70%, #004578 100%);
+				display: none;
+			}
+
+			&:hover{
+				&:before{
+					display: block;
+				}
+				
+			}
+		}
+
+		.name{
+			position: absolute;
+			bottom:20px;
+			color:$white;
+			display: none;
+			width:100%;
+			text-align: center;
+		}		
+
+		&:hover{			
+			.name{
+				display: block;
+			}
+		}
+	}	
+}
+
+// ----------------------- product slider block ------------------------------------
+.popular-products{
+	.product-slider{
+		.slick-arrow{
+			z-index:9;
+			width:auto;
+		}
+
+		.slick-prev{
+			left:0;
+		}
+
+		.slick-next{
+			right:0;
+		}
+	}
+
+	.product-slider.slick-slider{
+
+	}
+
+}
+
+@media (max-width:600px){
+	.product-slider{
+		.item{
+			display: none;
+		}
+
+		.item:nth-child(-n+3){
+			display:block;
+		}
+	}
+}
+
+// ----------------------- contact block ------------------------------------
+.contact{
+
+	.left{
+		padding:35px 15px 40px 40px;
+		background:$white;
+
+		h2{
+			color:$brand-blue;
+			margin-bottom:20px;
+		}
+
+		a.blue-link{
+			display: block;
+			margin-bottom:10px;
+		}
+
+		p{
+			margin-bottom:10px;
+		}
+	}
+
+	iframe{
+		width:100%;
+	}
+
+	.right{
+		padding-right:0;
+	}
+}
+
+
+// ----------------------- Single Blog ------------------------------------
+.social-share{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 15px;
+
+	a{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		margin-left: 5px;
+	}
+
+	.fb {
+	    background-image: url('./images/Facebook-icon.png');
+	}
+
+	.twitter {
+	    background-image: url('./images/twitter-icon.png');
+	}
+
+	.g-plus {
+	    background-image: url('./images/google-plus-icon.png');
+	}
+
+	.whats {
+	  background-image: url("./images/whatsapp-icon.png");
+	}
+	
+} 
+
+body.single-blog{
+	.content{
+		max-width: 800px;
+		margin:auto;
+		text-align: center;
+
+		h1{
+			text-align: left;
+		}
+	}
+
+	.wpb_column{
+		padding-left:0;
+		padding-right:0;
+	}
+
+	.uncode-single-media-wrapper img{
+		padding-top:20px;
+		padding-bottom:30px;
+	}
+
+	
+}

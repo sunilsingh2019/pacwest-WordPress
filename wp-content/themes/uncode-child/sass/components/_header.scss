@@ -1,0 +1,185 @@
+.pos-absolute{
+	position: absolute;
+}
+
+header.header{	
+	background: linear-gradient(#fff 30%, transparent 100%) 0% 0% no-repeat;
+	width:100%;
+	z-index:20;
+
+	.wrapper{
+		padding:20px 40px;
+	}	
+  
+	.row{
+		align-items: center;
+
+		& > div{
+			padding-top:0;
+			padding-bottom:0;
+		}
+	}
+
+	.logo{
+		max-width:150px;
+	}
+
+	.top-menu{
+		ul{
+			display: flex;
+			margin-bottom: 0;
+			
+			li{
+				margin-right:40px;
+			}
+
+			a{
+				color:$black;
+				line-height: $line-height-tight;
+			}
+
+			// .ranges:hover{
+			// 	.hover-show{
+			// 		display: block;
+			// 	}
+			// }
+
+			.hover-show{
+				position: absolute;
+			}
+		}
+	}
+
+	.site-search{
+		display: flex;
+		align-items:center;
+
+		form{
+			margin-left:7px;
+		}
+
+		input{
+			background:transparent;
+			border-bottom:1px solid $black;
+			padding:0;
+			width:200px;
+			box-shadow: none;
+		}
+
+		i.fas{
+			font-weight: 600;
+			font-size:26px;
+		}
+	}
+
+	.recipes-inspiration-hover-show, .our-ranges-hover-show{
+		padding:0;
+
+		& > .row{
+			padding:0;
+		}
+
+		.row > a{
+			display: block;
+			height:0;
+			padding-bottom:17%;
+			background-size:cover;
+			position:relative;
+			padding-left:0;
+			padding-right:0;
+			background-size:cover;
+
+			span{
+				font-family: Authenia;
+			    font-size: $fontsize-title-xl;
+			    font-weight:300;
+			    display: block;
+			    position: absolute;
+			    top:50%;
+			    left:50%;
+			    transform:translate(-50%, -50%);
+			}
+
+		}
+		.recipes{
+			span{
+				color:$white;
+			}
+		}
+
+		.trends{
+			span{
+				color:$brand-blue;
+			}
+		}
+
+		.header-gallery{
+			span{
+				color:$white;
+			}
+		}
+
+		.news{
+			span{
+				color:$white;
+			}
+		}
+	}
+
+	.mobile-menu{
+		display:none;
+	}
+}
+
+@media only screen and (max-width:1305px){
+	header.header{
+		.desktop-menu{
+			display:none;
+		}
+
+		.mobile-menu{
+			display:flex;
+			z-index:20;
+			position: relative;
+			justify-content:space-between;
+
+			.mobile-menu-icon{
+				width:36px;
+				height:32px;
+				margin-left:25px;
+				cursor:pointer;
+			}
+
+			ul.menu-list{
+				display: none;
+			}
+
+			ul.menu-list.show_list{
+				display:block;
+				position: fixed;
+			    top: 125px;
+			    background: $brand-blue;
+			    left: 0;
+			    right: 0;
+			    bottom:0;
+			    padding:0 30px;
+			    z-index:11;
+
+			    li{
+			    	border-bottom:1px solid $white;
+			    	text-align: center;
+			    	padding:10px 0;
+
+			    	a{
+				    	color:$white;
+				    	font-family: Avenir Bold;
+				    	font-size:24px;
+				    }
+			    }
+
+			    
+			}
+		}
+	}
+	
+}
