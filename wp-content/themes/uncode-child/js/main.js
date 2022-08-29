@@ -9,7 +9,7 @@
 
         build_product_slider();
 
-        filter_gallery();
+       // filter_gallery();
         // no_filter_waterfall();
         view_more_galleries();
         // filter_gallery_masonry();
