@@ -78,43 +78,43 @@
                     $recipe_species_of_protein = get_field('recipe_species_of_protein');
                     $recipe_country_of_origin = get_field('recipe_country_of_origin');
                 ?>
-        <div class="element-item item col-xl-3 col-lg-4 col-sm-6 col-12 hvr-bob element-item <?php echo $cat_classes;?>">
+            <div class="element-item item col-xl-3 col-lg-4 col-sm-6 col-12 hvr-bob element-item <?php echo $cat_classes;?>">
 
-        <a href="<?php echo get_the_permalink();?>">
-            <img src="<?php echo esc_url( $thumbnail_url[0] ); ?>">
-                <div class="general_info">
-                    <div class="post_type body-s">recipe</div>
-                    <div class="category body-s">Food Service</div>
-                </div>
-
-                <div class="wrapper">
-
-                    <h3 class="title-s"><?php the_title(); ?></h3>
-
-                    <div class="post_info container">
-                    <?php if($recipe_sustainability): ?>
-
-                        <div class="row">
-                            <div class="col-6">Sustainability:</div>
-                            <div class="col-6"><?php  echo $recipe_sustainability; ?></div>
-                        </div>
-                        <?php endif; ?>
-                        <?php if($recipe_species_of_protein): ?>
-                        <div class="row">
-                            <div class="col-6">Species of protein:</div>
-                            <div class="col-6"><?php echo $recipe_species_of_protein; ?></div>
-                        </div>
-                        <?php endif; ?>
-                        <?php if($recipe_country_of_origin): ?>
-                        <div class="row">
-                            <div class="col-6">Country of origin:</div>
-                            <div class="col-6"><?php echo $recipe_country_of_origin; ?></div>
-                        </div>
-                        <?php endif; ?>
+            <a href="<?php echo get_the_permalink();?>">
+                <img src="<?php echo esc_url( $thumbnail_url[0] ); ?>">
+                    <div class="general_info">
+                        <div class="post_type body-s">recipe</div>
+                        <div class="category body-s">Food Service</div>
                     </div>
-                </div>
-            </a>
-        </div>
+
+                    <div class="wrapper">
+
+                        <h3 class="title-s"><?php the_title(); ?></h3>
+
+                        <div class="post_info container">
+                        <?php if($recipe_sustainability): ?>
+
+                            <div class="row">
+                                <div class="col-6">Sustainability:</div>
+                                <div class="col-6"><?php  echo $recipe_sustainability; ?></div>
+                            </div>
+                            <?php endif; ?>
+                            <?php if($recipe_species_of_protein): ?>
+                            <div class="row">
+                                <div class="col-6">Species of protein:</div>
+                                <div class="col-6"><?php echo $recipe_species_of_protein; ?></div>
+                            </div>
+                            <?php endif; ?>
+                            <?php if($recipe_country_of_origin): ?>
+                            <div class="row">
+                                <div class="col-6">Country of origin:</div>
+                                <div class="col-6"><?php echo $recipe_country_of_origin; ?></div>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </a>
+            </div>
         <?php endwhile;?>
        
     </div>
