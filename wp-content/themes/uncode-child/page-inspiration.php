@@ -20,7 +20,6 @@
             <ul class="button-group filters-button-group fish-type">
                 <li>
                 <button class="button is-checked" data-filter="*">Show all</button>
-
                 <?php 
                     $blog_types = get_terms(array('taxonomy'=> 'blog_type','hide_empty' => false, )); 
                     foreach($blog_types as $blog_type):?>
@@ -58,14 +57,13 @@
                     'post_type' => array( 'recipe', 'blog' )       
                     //'cat' => 2,
                 ));
-                
                 while($products->have_posts()) : $products->the_post();
                 $cats = get_the_terms( get_the_ID(), array( 
                     'taxonomy' => 
                     'blog_type',
                     'recipe_seafoods',
                     
-                ) );
+                ));
                     $cat_names = array();
                 
                     foreach($cats as $cat){
@@ -73,8 +71,6 @@
                     }
                     $cat_classes = implode(' ', $cat_names);
 
-
-                  
                     $thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), '', true); 
                      //var_dump($cat_classes);
 

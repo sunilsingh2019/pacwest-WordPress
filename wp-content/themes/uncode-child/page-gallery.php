@@ -106,15 +106,15 @@
     
                         <?php
                                 
-                                    if($brand == 'food-service'){
-                                        $used_products = get_field('food_service_used_products', $gallery);
-                                    }else{
-                                        $used_products = get_field('at_home_used_products', $gallery);
-                                    }
-                                    
-                                    if($used_products):
-                                
-                                ?>
+                            if($brand == 'food-service'){
+                                $used_products = get_field('food_service_used_products', $gallery);
+                            }else{
+                                $used_products = get_field('at_home_used_products', $gallery);
+                            }
+                            
+                            if($used_products):
+                        
+                        ?>
     
                         <h3 class="body-l-bold">Products Used</h3>
     

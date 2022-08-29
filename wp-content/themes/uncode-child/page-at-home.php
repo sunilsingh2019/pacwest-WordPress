@@ -20,11 +20,7 @@ $banner = get_field('top_banner_image');
     the_content();
 
 ?>
-
-
-
 <!--product slider-->
-
 <?php 
     
     $enable_slider = get_field('disable_product_slider');
@@ -65,9 +61,7 @@ $banner = get_field('top_banner_image');
         		<?php
                    while( have_rows($slider_var) ) : the_row();
                         $product= get_sub_field('product');
-                            
                 ?>
-                    
                     <div class="item">
         				<a class="img-wrapper" href="<?php the_permalink($product->ID);?>">
         				    <img src="<?php echo get_the_post_thumbnail_url($product->ID, 'full');?>" alt="picture of <?php echo $product->post_title; ?>">
@@ -75,9 +69,7 @@ $banner = get_field('top_banner_image');
         				</a>	
         				<div class="name title-s"><?php echo $product->post_title;?></div>
         			</div>
-                    
                 <?php endwhile; ?>
-         
         	</div>
         	<a class="button btn-white-blue" href="<?php echo site_url('/at-home-products');?>">VIEW PRODUCTS</a>
         </div>
