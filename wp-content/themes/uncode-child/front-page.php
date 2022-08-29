@@ -10,7 +10,6 @@ while ( have_posts() ) : the_post();
 <div class="hide mobile-background-image" data-image="<?php echo get_field('background_image_mobile')['url']; ?>"></div>
 <div class="hide desktop-background-image" data-image="<?php echo get_field('background_image_desktop')['url']; ?>">
 </div>
-
 <?php endwhile;?>
 
 <div class="not-in-menu">
@@ -33,7 +32,6 @@ while ( have_posts() ) : the_post();
     <div class="waterfall__btn text-center">
         <a class="button btn-blue-white show-more--4" href="#">VIEW MORE</a>
     </div>
-
     <?php endif;?>
 </div>
 
